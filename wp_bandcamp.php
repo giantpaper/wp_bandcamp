@@ -34,10 +34,10 @@ add_shortcode('bandcamp', function($attr=[]){
 	}
 	
 	if ( preg_match("#^[0-9]+$#", $width) ) {
-			$width = $width.'px';
+		$width = $width.'px';
 	}
 	if ( preg_match("#^[0-9]+$#", $height) ) {
-			$height = $height.'px';
+		$height = $height.'px';
 	}
 
 	$iframe = '<iframe style="border: 0; width: %s; height: %s;" src="%s" title="%s" seamless></iframe>';
