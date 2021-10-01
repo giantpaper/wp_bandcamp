@@ -26,6 +26,11 @@ add_shortcode('bandcamp', function($attr=[]){
 	unset($attr['title'], $attr['width'], $attr['height']);
 	
 	$params = array_merge($attr, $params);
+	
+	foreach ($params as $key => $value) {
+		$p[] = $key. '=' .$value;
+	}
+	
 	if ($album == null)
 		return false;
 	
