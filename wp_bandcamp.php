@@ -4,6 +4,7 @@ add_shortcode('bandcamp', function($attr=[]){
 	$attr = shortcode_atts([
 		'width' => 350,
 		'height' => 470,
+		'title' => null,
 		'album' => null,
 		'title' => null,
 		'size' => 'large',
@@ -11,7 +12,6 @@ add_shortcode('bandcamp', function($attr=[]){
 		'url' => null,
 		'linkcol' => '0687f5',
 		'tracklist' => 'false',
-		'title' => null,
 		'artwork' => null,
 	], $attr);
 	
