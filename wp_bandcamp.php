@@ -19,6 +19,8 @@ add_shortcode('bandcamp', function($attr=[]){
 		'transparent' => 'true',
 	];
 	
+	$url_base = 'https://bandcamp.com/EmbeddedPlayer/';
+	
 	$p = [];
 	
 	extract($attr);
@@ -38,7 +40,7 @@ add_shortcode('bandcamp', function($attr=[]){
 			$height = $height.'px';
 	}
 
-	$iframe = '<iframe style="border: 0; width: %s; height: %s;" src="https://bandcamp.com/EmbeddedPlayer/%s" title="%s" seamless></iframe>';
+	$iframe = '<iframe style="border: 0; width: %s; height: %s;" src="%s" title="%s" seamless></iframe>';
 	
 	return sprintf('<figure class="wp-block-embed-bandcamp wp-block-embed is-type-audio is-provider-bandcamp">' . '<div class="wp-block-embed__wrapper">' . $iframe . '</div>' . '</figure>',
 		$width,
