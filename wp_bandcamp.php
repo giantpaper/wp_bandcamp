@@ -31,9 +31,6 @@ add_shortcode('bandcamp', function($attr=[]){
 		$p[] = $key. '=' .$value;
 	}
 	
-	if ($album == null)
-		return false;
-	
 	if ( preg_match("#^[0-9]+$#", $width) ) {
 			$width = $width.'px';
 	}
