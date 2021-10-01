@@ -15,11 +15,11 @@ add_shortcode('bandcamp', function($attr=[]){
 		'artwork' => null,
 	], $attr);
 	
+	$url_base = 'https://bandcamp.com/EmbeddedPlayer/';
+	
 	$params = [
 		'transparent' => 'true',
 	];
-	
-	$url_base = 'https://bandcamp.com/EmbeddedPlayer/';
 	
 	$p = [];
 	
