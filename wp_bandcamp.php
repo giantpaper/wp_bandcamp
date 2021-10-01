@@ -18,7 +18,7 @@ add_shortcode('bandcamp', function($attr=[]){
 	extract($attr);
 	
 	$params = [
-		
+		'transparent' => 'true',
 	];
 	
 	if ($album == null)
