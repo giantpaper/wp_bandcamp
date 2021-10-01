@@ -15,12 +15,13 @@ add_shortcode('bandcamp', function($attr=[]){
 		'artwork' => null,
 	], $attr);
 	
-	extract($attr);
-	
 	$params = [
 		'transparent' => 'true',
 	];
 	
+	$p = [];
+	
+	extract($attr);
 	if ($album == null)
 		return false;
 	
